@@ -36,4 +36,55 @@
 ## **1.3 Data Sources (3 points)**
 
 **Primary Source:**  
-- **Dataset:** [Kaggle Te]()
+- **Dataset:** [Kaggle Telecom Customer Churn Dataset](https://www.kaggle.com/)  
+- **Records:** 7,043 (CSV format)  
+- **Access:** Public download  
+
+**Secondary Source:**  
+- **Dataset:** Economic indicators via [World Bank API](https://api.worldbank.org/)  
+- **Access:** Free API access  
+
+**Backup Source:**  
+- **Dataset:** [FRED Economic Data](https://fred.stlouisfed.org/) (if World Bank API unavailable)
+
+**Grading Criteria:**
+- ✓ At least 2 distinct data sources identified  
+- ✓ Data accessibility confirmed  
+- ✓ Data appears sufficient for proposed analysis  
+- ✓ Backup plan provided  
+
+---
+
+## **1.4 Methodology Overview (2 points)**
+
+**Approach:**
+1. **Data Collection:** Merge customer data with economic indicators  
+2. **Data Cleaning:** Handle missing values, outliers, and duplicates  
+3. **Feature Engineering:** Create new features (e.g., customer lifetime value, usage patterns)  
+4. **Modeling:** Compare Logistic Regression, Random Forest, and XGBoost  
+5. **Evaluation:** Use Accuracy, Precision, Recall, F1-score, and ROC-AUC metrics  
+6. **Deployment Plan:** Build a simple churn prediction interface  
+
+**Grading Criteria:**
+- ✓ Approach is logical and feasible  
+- ✓ Techniques align with course content  
+- ✓ Timeline is realistic  
+
+---
+
+## **1.5 Expected Challenges (1 point)**
+
+**Challenges:**
+1. **Imbalanced Dataset:** Only ~27% churn rate  
+   → *Solution:* Use SMOTE oversampling or adjust class weights  
+
+2. **Missing Economic Data:** Some time periods may lack indicators  
+   → *Solution:* Apply interpolation or exclude affected records  
+
+3. **Limited Domain Knowledge:** Lack of telecom-specific expertise  
+   → *Solution:* Review industry reports and consult with TA  
+
+**Grading Criteria:**
+- ✓ Challenges identified and mitigation strategies proposed  
+
+---
